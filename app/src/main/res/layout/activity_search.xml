@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".search">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Photos.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.Photos.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Spinner
+        android:id="@+id/tag_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:text="@string/name_label"
+        />
+    <EditText
+        android:id="@+id/tag_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:drawable/editbox_background" />
+    <Spinner
+        android:id="@+id/tag_spinnercombo"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+    <Spinner
+        android:id="@+id/tag_spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:text="@string/name_label"
+        />
+    <EditText
+        android:id="@+id/tag_name2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:drawable/editbox_background" />
+    <!--  Year label -->
+    <!--  Buttons for save and cancel -->
+
+    <Button
+        android:id="@+id/movie_cancel"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:onClick="search"
+        android:text="@string/search"
+        android:textSize="16sp"
+        app:backgroundTint="@null" />
+
+</LinearLayout>

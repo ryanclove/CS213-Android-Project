@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Photos App</string>
+    <string name="title_activity_see_album">List of Photos</string>
+    <string name="name_label">Value</string>
+    <string name="othername_label">Name</string>
+    <string name="save_label">Save</string>
+    <string name="cancel_label">Cancel</string>
+    <string name="add_album">Add</string>
+    <string name="open_album">Open</string>
+    <string name="delete_album">Delete</string>
+    <string name="edit_album">Edit</string>
+    <string name="add_photo">Add</string>
+    <string name="delete_photo">Delete</string>
+    <string name="display">Display</string>
+    <string name="move">Move</string>
+    <string name="forward"> Next</string>
+    <string name="backward"> Previous </string>
+    <string name="add_tag"> Add Tag</string>
+    <string name="delete_tag"> Delete Tag </string>
+    <string name="search"> Search</string>
+
+    <string-array name="tag_array">
+        <item>Location</item>
+        <item>Person</item>
+    </string-array>
+    <string-array name="tag_array2">
+        <item>1 Tag</item>
+        <item>AND</item>
+        <item>OR</item>
+    </string-array>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="tag">Tags:</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_add_edit_album">Album</string>
+    <string name="title_activity_display_photo">Photo Display</string>
+    <string name="title_activity_add_tag">Add Tag</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_move">Choose folder to move to</string>
+    <string name="title_activity_searchresults">Search Results</string>
+    <string name="title_activity_searchresultsdisplay">Search Results Display</string>
+</resources>

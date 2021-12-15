@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.photos">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Photos">
+        <activity
+            android:name=".searchresultsdisplay"
+            android:exported="false"
+            android:label="@string/title_activity_searchresultsdisplay"
+            android:theme="@style/Theme.Photos.NoActionBar" />
+        <activity
+            android:name=".searchresults"
+            android:exported="false"
+            android:label="@string/title_activity_searchresults"
+            android:theme="@style/Theme.Photos.NoActionBar" />
+        <activity
+            android:name=".move"
+            android:exported="false"
+            android:label="@string/title_activity_move"
+            android:parentActivityName=".SeeAlbum"
+            android:theme="@style/Theme.Photos.NoActionBar" />
+        <activity
+            android:name=".search"
+            android:exported="false"
+            android:label="@string/title_activity_search"
+            android:theme="@style/Theme.Photos.NoActionBar" />
+        <activity
+            android:name=".add_tag"
+            android:exported="false"
+            android:label="@string/title_activity_add_tag"
+            android:theme="@style/Theme.Photos.NoActionBar" />
+        <activity
+            android:name=".display_photo"
+            android:exported="false"
+            android:label="@string/title_activity_display_photo"
+            android:parentActivityName=".SeeAlbum"
+            android:theme="@style/Theme.Photos.NoActionBar" />
+        <activity
+            android:name=".add_edit_album"
+            android:exported="false"
+            android:label="@string/title_activity_add_edit_album"
+            android:parentActivityName=".Photos"
+            android:theme="@style/Theme.Photos.NoActionBar" />
+        <activity
+            android:name=".SeeAlbum"
+            android:exported="true"
+            android:label="@string/title_activity_see_album"
+            android:parentActivityName=".Photos"
+            android:theme="@style/Theme.Photos.NoActionBar" />
+        <activity
+            android:name=".Photos"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
